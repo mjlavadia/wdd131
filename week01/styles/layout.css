@@ -1,0 +1,49 @@
+/* General page setup */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Header - Main - Footer */
+  min-height: 100vh; /* Makes footer stick to bottom */
+}
+
+/* Header */
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem;
+}
+
+/* Navigation (Flexbox) */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;          /* Flexbox applied */
+  gap: 1rem;              /* Space between links */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
+  padding: 1rem;
+  background-color: #ecf0f1;
+}
+
+/* Footer */
+footer {
+  background-color: #34495e;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
