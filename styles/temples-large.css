@@ -1,0 +1,75 @@
+/* Header layout */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  text-align: left;
+  background: #004466;
+  color: white;
+}
+
+/* Title left */
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Hide hamburger in large view */
+#hamburger {
+  display: none;
+}
+
+/* Nav visible, aligned right */
+#navMenu {
+  display: block !important;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background: #006699;
+}
+
+/* Main wider */
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+/* Gallery: 3 per row */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem; 
+}
+
+/* Figure styling */
+figure {
+  margin: 0;
+  text-align: center;  
+}
+
+figure img {
+  width: 100%;
+  aspect-ratio: 1 / 1;  
+  object-fit: cover;
+  border-radius: 0.5rem;
+  display: block;
+}
